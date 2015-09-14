@@ -8,16 +8,6 @@ int LIMIT;
 unsigned int x = 0;
 unsigned int y = 0;
 
-void pass3(){
-    x =(x+((L*2)-1))%L;
-    y =(y+1)%L;
-}
-
-void pass4(){
-    y = (y+((L*2)-1))%L;
-    x = (x+2)%L;
-}
-
 void printSquare(std::vector< std::vector<int> > &square){
     for(int i = 0; i<L; i++){
         for(int j = 0; j<L; j++){
@@ -37,13 +27,18 @@ void second(std::vector< std::vector<int> > &square){
 void fourth(std::vector< std::vector<int> > &square){
     if(actualValue == LIMIT) {return;}
     std::cout<<"4. Caso já haja um número na nova posição, volta-se a posição antiga\n e apenas descemos linha. A coluna continua a mesma."<<std::endl;
-    pass4();
+    
+    y = (y+((L*2)-1))%L;
+    x = (x+2)%L;
+
     square[x][y] = actualValue++;
     printSquare(square);
 }
 
 void third(std::vector< std::vector<int> > &square){
-    pass3();   
+    x =(x+((L*2)-1))%L;
+    y =(y+1)%L;   
+
     if(square[x][y] != 0){
         fourth(square);
         return;
