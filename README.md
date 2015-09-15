@@ -19,7 +19,7 @@ certa coluna ou linha dá sempre o mesmo valor para todas as linhas e colunas.
 
 #Modo de uso :
 
-C       ~> Compilar com gcc (gcc magicSquare.c -o ms), e depois executar com o numero por parametro (./ms 3) 
-C++     ~> Compilar com o g++ (g++ magicSquare.cpp -o ms), e depois executar da mesma maneira que o 'C'
-Java    ~> Compilar com o javac (javac magicSquare.java), e depois executar com o java passando um numero por parametro(java magicSquare 3)
-ruby    ~> Apenas executar com o ruby(ruby magicSquare.rb)
+*C       ~> Compilar com gcc (gcc magicSquare.c -o ms), e depois executar com o numero por parametro (./ms 3) 
+*C++     ~> Compilar com o g++ (g++ magicSquare.cpp -o ms), e depois executar da mesma maneira que o 'C'
+*Java    ~> Compilar com o javac (javac magicSquare.java), e depois executar com o java passando um numero por parametro(java magicSquare 3)
+*ruby    ~> Apenas executar com o ruby(ruby magicSquare.rb)
